@@ -48,8 +48,6 @@ public class MethodParser {
         List<MethodSignature.Argument> argumentsList = new ArrayList<>();
         for (int j=0; j<typeAndName.size(); j+=2){
             MethodSignature.Argument argument = new MethodSignature.Argument(typeAndName.get(j), typeAndName.get(j+1));
-            System.out.println(argument.getType());
-            System.out.println(argument.getName());
             argumentsList.add(argument);
         }
         methodSignature.setArguments(argumentsList);
