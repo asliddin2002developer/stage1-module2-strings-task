@@ -7,11 +7,14 @@ public class MethodSignature {
     private String accessModifier;
     private String returnType;
     private String methodName;
-    private final List<Argument> arguments;
+    private List<Argument> arguments;
 
     public MethodSignature(String methodName, List<Argument> arguments) {
         this.methodName = methodName;
         this.arguments = arguments;
+    }
+
+    public MethodSignature() {
     }
 
     public MethodSignature(String methodName) {
@@ -20,6 +23,10 @@ public class MethodSignature {
 
     public String getMethodName() {
         return methodName;
+    }
+
+    public void setArguments(List<Argument> arguments) {
+        this.arguments = arguments;
     }
 
     public void setMethodName(String methodName) {
